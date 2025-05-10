@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Fake Product Identification</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/qr_code_box.css">
+    <style>
+        body {
+          font-family: 'Arial', sans-serif;
+          background: linear-gradient(to bottom, #e9f7fc, #fdfbee);
+        margin: 0;
+        padding: 0;
+      }
+
+      .navbar {
+        background-color: #343a40 !important;
+      }
+
+      .navbar-nav .nav-link {
+        color: #f8f9fa !important;
+        font-weight: 500;
+      }
+
+      .navbar-nav .nav-link:hover {
+        color: #ffc107 !important;
+      }
+
+      .btn {
+        border-radius: 25px;
+        padding: 10px 20px;
+        font-size: 16px;
+      }
+
+      .btn-warning {
+        background-color: #ffc107;
+        border: none;
+        color: #fff;
+      }
+
+      .btn-warning:hover {
+        background-color: #e0a800;
+      }
+
+      .form-control {
+        border-radius: 10px;
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+      }
+
+      .form-control:focus {
+        border-color: #ffc107;
+        box-shadow: 0px 0px 5px #ffc107;
+      }
+
+      .container {
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 30px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .qr-code {
+        margin-top: 30px;
+      }
+
+      h2 {
+        text-align: center;
+        margin-bottom: 30px;
+        color: #343a40;
+      }
+
+      .matrix {
+        margin: 20px 0;
+      }
+
+      .matrix label {
+        font-weight: bold;
+        color: #343a40;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="ftco-section">
+      <div class="container-fluid px-md-5">
+        <div class="row justify-content-between">
+          <div class="col-md-8 order-md-last">
+            <div class="row">
+              <div class="col-md-6 text-center">
+                <a class="navbar-brand" href="index.html">Fake Product Identification <span>through Blockchain</span></a>
+              </div>
+              <div class="col-md-6 d-md-flex justify-content-end mb-md-0 mb-3">
+                <form action="#" class="searchform order-lg-last"></form>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex">
+            <div class="social-media"></div>
+          </div>
+        </div>
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-dark cdftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="fa fa-bars"></span> Menu
+          </button>
+          <div class="collapse navbar-collapse" id="ftco-nav">
+            <ul class="navbar-nav m-auto">
+              <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+              <li class="nav-item"><a href="manufacturer.html" class="nav-link">Manufacturer</a></li>
+              <li class="nav-item"><a href="seller.html" class="nav-link">Seller</a></li>
+              <li class="nav-item"><a href="consumer.html" class="nav-link">Consumer</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <section>
+      <div class="container">
+        <h2>Add Seller</h2>
+        <div class="matrix">
+          <table width="100%">
+            <tr width="100%">
+              <td width="15%" align="center">
+                <label for="seller_id">🖋️ Seller Name</label>
+              </td>
+              <td width="30%">
+                <input class="form-control" id="SellerName" name="SellerName" type="text" />
+              </td>
+              <td width="15%" align="center">
+                <label for="name">🏷️ Seller Brand</label>
+              </td>
+              <td width="30%">
+                <input class="form-control" id="SellerBrand" name="SellerBrand" type="text" />
+              </td>
+            </tr>
+            <tr width="100%">
+              <td width="15%" align="center">
+                <label for="username">Seller Code</label>
+
+              </td>
+              <td width="30%">
+                <input class="form-control" id="SellerCode" name="SellerCode" type="text" />
+              </td>
+              <td width="15%" align="center">
+                <label for="name">📞 Seller Phone Number</label>
+              </td>
+              <td width="30%">
+                <input class="form-control" id="SellerPhoneNumber" name="SellerPhoneNumber" type="text" />
+              </td>
+            </tr>
+            <tr width="100%">
+              <td width="15%" align="center">
+                <label for="username">👔 Seller Manager</label>
+              </td>
+              <td width="30%">
+                <input class="form-control" id="SellerManager" name="SellerManager" type="text" />
+              </td>
+            </tr> 
+            <tr width="100%">
+              <td width="15%" align="center">
+                <label for="name">🏠 Seller Address</label>
+              </td>
+              <td width="30%">
+                <input class="form-control" id="SellerAddress" name="selleraddress" type="text" />
+              </td>
+            </tr> 
+            <tr width="100%">
+              <td width="15%" align="center">
+                <label for="username">💼 Manufacturer ID</label>
+              </td>
+              <td width="30%">
+                <input class="form-control" id="ManufacturerId" name="ManufacturerId" type="text" />
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="clear">&nbsp;</div>
+        <div class="text-center"> 
+        
+
+        <button type="submit" class="btn btn-warning btn-register" id="register">Add the Seller</button>
+      </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/sellerApp.js"></script>
+  </body>
+</html>

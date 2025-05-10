@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Fake Product Identification</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Roboto", sans-serif;
+        background: linear-gradient(to bottom, #e9f7fc, #fdfbee);
+        color: #333;
+        line-height: 1.6;
+      }
+
+      .navbar {
+        background-color: #232f3e;
+        padding: 1rem;
+      }
+
+      .navbar .logo {
+        color: #ffcc00;
+        font-size: 1.5rem;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+      }
+
+      .hero {
+        text-align: center;
+        padding: 40px 0;
+        background-color: #f5f5f5;
+        border-radius: 8px;
+        margin-bottom: 2rem;
+      }
+
+      .hero h1 {
+        font-size: 2.5rem;
+        color: #333;
+        margin-bottom: 10px;
+      }
+
+      .hero p {
+        font-size: 1.1rem;
+        margin-bottom: 20px;
+      }
+      #three-canvas {
+        width: 100%;
+        height: 400px;
+        display: block;
+        border-radius: 8px;
+        background: #e0e0e0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      
+
+      .about {
+        background-color: #ffffff;
+        padding: 40px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: 3rem;
+      }
+
+      .about-header {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .about-header h3 {
+        font-size: 2rem;
+        color: #007bff;
+      }
+
+      .about-content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+
+      .about-content .text {
+        flex: 1;
+        padding: 10px;
+      }
+
+      .about-content .text ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .about-content .text ul li {
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+      }
+
+      .about-content .text ul li i {
+        color: #007bff;
+        margin-right: 10px;
+      }
+
+      .about-content .image {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .about-content .image img {
+        max-width: 80%;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      .footer {
+        text-align: center;
+        padding: 10px;
+        background: #232f3e;
+        color: #fff;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <section class="ftco-section">
+      <div class="container-fluid px-md-16">
+        <div class="row justify-content-between">
+          <div class="col-md-12 order-md-last">
+            <div class="row">
+              <div class="col-md-12 text-center">
+                <a class="navbar-brand" href="index.html">
+                  Fake Product Identification
+                  <span>through Blockchain</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav
+        class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light"
+        id="ftco-navbar"
+      >
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#ftco-nav"
+          >
+            <span class="fa fa-bars"></span> Menu
+          </button>
+          <div class="collapse navbar-collapse" id="ftco-nav">
+            <ul class="navbar-nav m-auto">
+              <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+              <li class="nav-item"><a href="addProduct.html" class="nav-link">Add Product</a></li>
+              <li class="nav-item"><a href="addSeller.html" class="nav-link">Add Seller</a></li>
+              <li class="nav-item"><a href="sellProductManufacturer.html" class="nav-link">Sell Product To Seller</a></li>
+              <li class="nav-item"><a href="querySeller.html" class="nav-link">Query Seller</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <!-- Hero Section with 3D Model -->
+    <section class="hero">
+      <div class="container">
+        <h1>Welcome to the Manufacturer Dashboard</h1>
+        <p>Your trusted partner in ensuring product authenticity through blockchain technology.</p>
+        <h2>Interactive 3D Product Demo</h2>
+        <canvas id="three-canvas" data-model="engine.glb"></canvas>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about">
+      <div class="container">
+        <div class="about-header">
+          <h3>About the Manufacturer</h3>
+        </div>
+        <div class="about-content">
+          <div class="text">
+            <p>We are committed to transparency, authenticity, and combating counterfeits using blockchain technology. Here's what we offer:</p>
+            <ul>
+              <li><i class="fa fa-check-circle"></i> Advanced blockchain-enabled product tracking.</li>
+              <li><i class="fa fa-check-circle"></i> Decentralized storage using IPFS for tamper-proof records.</li>
+              <li><i class="fa fa-check-circle"></i> Real-time supply chain visibility for manufacturers.</li>
+              <li><i class="fa fa-check-circle"></i> Enhanced trust between manufacturers and consumers.</li>
+              <li><i class="fa fa-check-circle"></i> Scalable solutions for global markets.</li>
+            </ul>
+          </div>
+          <div class="image">
+            <img src="https://inc42.com/wp-content/uploads/2015/09/col_image.jpg" alt="Blockchain Visualization" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; 2025 Manufacturer Dashboard | Blockchain-based Authenticity Solutions</p>
+    </footer>
+
+    <!-- 3D Model Script -->
+    <script type="module" src="./js/main1.js"></script>
+  </body>
+</html>

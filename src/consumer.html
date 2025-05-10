@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Fake Product Identification - Consumer</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(to bottom, #fdfbee, #e9f7fc);
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: #232f3e;
+            padding: 1rem;
+        }
+
+        .navbar .logo {
+            color: #ffcc00;
+            font-size: 1.5rem;
+            text-align: center;
+            display: block;
+            margin: 0 auto;
+        }
+
+        #three-canvas {
+            width: 100%;
+            height: 400px;
+            display: block;
+            border-radius: 8px;
+            background: #e0e0e0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        canvas {
+            width: 800px;
+            height: 500px;
+            border-radius: 12px;
+        }
+
+        .about {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 3rem;
+        }
+
+        .about-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .about-header h3 {
+            font-size: 2rem;
+            color: #007bff;
+        }
+
+        .about-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .about-content .text {
+            flex: 1;
+            padding: 10px;
+        }
+
+        .about-content .text ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .about-content .text ul li {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .about-content .text ul li i {
+            color: #007bff;
+            margin-right: 10px;
+        }
+
+        .about-content .image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .about-content .image img {
+            max-width: 80%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background: #232f3e;
+            color: #fff;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Section -->
+    <section class="ftco-section">
+        <div class="container-fluid px-md-5">
+            <div class="row justify-content-between">
+                <div class="col-md-12 order-md-last">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <a class="navbar-brand" href="index.html">Fake Product Identification <span>through Blockchain</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+                    aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="fa fa-bars"></span> Menu
+                </button>
+                <div class="collapse navbar-collapse" id="ftco-nav">
+                    <ul class="navbar-nav m-auto">
+                        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="consumerPurchaseHistory.html" class="nav-link">Consumer Purchase History</a></li>
+                        <li class="nav-item"><a href="verifyProducts.html" class="nav-link">Product Verification</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+     
+       <!-- 3D Model Canvas Section (Hero Replacement) -->
+<!-- 3D Model Canvas Section (Hero Replacement) -->
+<section class="hero-wrap js-fullheight" style="padding: 20px 0;">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
+        <div class="col-md-10 text-center">
+          <canvas id="three-canvas" data-model="bitcoin.glb"></canvas>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+
+        <!-- About Section -->
+        <section class="about">
+            <div class="container">
+                <div class="about-header">
+                    <h3>About the Consumer</h3>
+                </div>
+                <div class="about-content">
+                    <div class="text">
+                        <p>Our platform provides consumers with the tools to ensure product authenticity and build trust with consumers:</p>
+                        <ul>
+                            <li><i class="fa fa-check-circle"></i> Verify product authenticity instantly.</li>
+                            <li><i class="fa fa-check-circle"></i> Access blockchain-based product history.</li>
+                            <li><i class="fa fa-check-circle"></i> Seamless integration with existing workflows.</li>
+                            <li><i class="fa fa-check-circle"></i> Enhance customer satisfaction and trust.</li>
+                            <li><i class="fa fa-check-circle"></i> Contribute to a counterfeit-free ecosystem.</li>
+                        </ul>
+                    </div>
+                    <div class="image">
+                        <img src="https://images.pexels.com/photos/1097946/pexels-photo-1097946.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Consumer Blockchain Visualization">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="footer">
+            <p>&copy; 2025 Consumer Dashboard | Blockchain-based Authenticity Solutions</p>
+        </footer>
+
+        <!-- Three.js and Custom Script -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+        <script src="./js/main1.js" type="module"></script>
+    </section>
+</body>
+
+</html>
