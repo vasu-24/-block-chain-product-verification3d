@@ -124,6 +124,45 @@
             color: #fff;
             margin-top: 20px;
         }
+
+        /* Ensure that the navbar collapses into a hamburger on smaller screens */
+        @media screen and (max-width: 768px) {
+            .navbar-nav {
+                text-align: center;
+                width: 100%;
+            }
+
+            .navbar-nav .nav-item {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+
+            .navbar-toggler {
+                border: none;
+                background: transparent;
+            }
+
+            .navbar-toggler:focus {
+                outline: none;
+            }
+
+            .navbar-brand {
+                font-size: 1.5rem;
+                text-align: center;
+            }
+
+            /* Ensure the nav links have proper spacing on small screens */
+            .navbar-nav .nav-link {
+                padding: 10px;
+                font-size: 1.2rem;
+            }
+        }
+
+        @media screen and (max-width: 576px) {
+            .navbar-nav .nav-link {
+                font-size: 1rem; /* Adjust text size further on very small screens */
+            }
+        }
     </style>
 </head>
 
@@ -200,6 +239,11 @@
 
     <!-- Model Viewer Script -->
     <script src="./js/main1.js" type="module"></script>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
 
 </html>
